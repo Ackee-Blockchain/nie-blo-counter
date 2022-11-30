@@ -209,17 +209,8 @@ export async function increment(): Promise<void> {
  * Decrement
  */
 export async function decrement(): Promise<void> {
-  console.log('Incrementing ', counter.publicKey.toBase58());
-  const instruction = new TransactionInstruction({
-    keys: [{ pubkey: counter.publicKey, isSigner: false, isWritable: true }],
-    programId,
-    data: Buffer.alloc(2),
-  });
-  await sendAndConfirmTransaction(
-    connection,
-    new Transaction().add(instruction),
-    [payer],
-  );
+  console.log('Decrementing ', counter.publicKey.toBase58());
+  // TODO
 }
 
 /**

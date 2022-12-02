@@ -16,6 +16,12 @@ If this is your first time using the Solana CLI, you will need to generate a new
 solana-keygen new
 ```
 
+3. Airdrop funds
+
+```
+solana airdrop 1
+```
+
 ### Start local Solana cluster
 
 This example connects to a local Solana cluster by default.
